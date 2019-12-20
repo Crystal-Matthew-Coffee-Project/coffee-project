@@ -69,34 +69,6 @@ function updateCoffees(e) {
     });
 }
 
-// function updateCoffees(e) {
-//
-//     e.preventDefault(); // don't submit the form, we just want to update the data
-//     // var selectedRoast = roastSelection.value; // === "light/dark" etc....
-//     var filteredCoffees = [];
-//     var allCoffee = [];
-//     coffees.forEach(function(coffee) {
-//
-//         if(coffee.roast === roastSelection.value) {
-//             filteredCoffees.push(coffee);
-//             tbody.innerHTML = renderCoffees(filteredCoffees);
-//         }
-//         else if(coffee.roast === roastSelection.value){
-//             filteredCoffees.push(coffee);
-//             tbody.innerHTML = renderCoffees(filteredCoffees);
-//         }
-//         else if(coffee.roast === roastSelection.value){
-//             filteredCoffees.push(coffee);
-//             tbody.innerHTML = renderCoffees(filteredCoffees);
-//         }
-//         else if(roastSelection.value === "all") {
-//             allCoffee.push(coffee);
-//             tbody.innerHTML = renderCoffees(allCoffee)
-//         }
-//     });
-//
-// }
-
 //============================================= COFFEE ARRAY =========================================================//
 
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide

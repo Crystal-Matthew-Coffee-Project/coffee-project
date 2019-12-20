@@ -46,8 +46,8 @@
 }
 /*================================================= DROPDOWN LIST ====================================================*/
 .selectOptions {
-    font-size: 16px;
-    width: 250px;
+    font-size: 2em;
+    width: 10em;
     background-color:#FFF;
     outline:none;
     border:none;
@@ -56,47 +56,47 @@
 }
 /*================================================= SEARCH BAR =======================================================*/
 #coffee-filter {
-    width: 250px;
-    font-size: 17px;
+    width: 20em;
+    font-size: .5em;
     border: none;
     padding: 0;
     margin: 6px;
 }
 #new-name {
-    width: 250px;
-    font-size: 17px;
+    width: 4em;
+    font-size: 1em;
     border: none;
     padding: 0;
     margin: 6px;
 }
 /*================================================= images ===========================================================*/
 .iconImg {
-    margin-top: 10px;
-    width: 100px;
-    height:100px;
+    margin-top: 1em;
+    width: 8em;
+    height:8em;
     background: none;
     position: absolute;
-    left: 900px;
-    top: 65px;
+    left: 55em;
+    top: 3em;
     z-index: 2;
 }
 .coffee-header{
-    margin-top: 10px;
+    margin-top: 1em;
     position: relative;
-    left:360px ;
-    width: 300px;
-    height: 200px;
+    left:22em ;
+    width: 20em;
+    height: 10em;
     z-index: 3;
 }
 .iconImg2 {
-    margin-top: 10px;
-    width: 100px;
-    height:100px;
+
+    margin-top: 1em;
+    width: 8em;
+    height:8em;
     background: none;
     position: absolute;
-    right: 900px;
-    top: 65px;
-    /*margin: 0 auto;*/
+    left: 25em;
+    top: 3em;
     z-index: 2;
 }
 /*=================================================== Rotates Emblems ================================================*/
@@ -145,5 +145,5 @@
 }
 
 .submit{
-    width: 250px;
+    width: 6em;
 }
