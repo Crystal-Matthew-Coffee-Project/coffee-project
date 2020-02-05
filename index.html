@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Coffee Project</title>
-    <link rel="stylesheet" href="coffee-style.css">
+    <link rel="stylesheet" href="crystal-coffee-style.css">
     <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body style="background-image: url('caffeine-coffee-coffee-beans-roasted-585750.jpg');">
+<body>
 <div class="parent">
     <!--============================================== DIV 1 SECTION ====================================================-->
     <div class="div1 box">
@@ -18,13 +19,15 @@
     <!--============================================== DIV 2 SECTION ====================================================-->
     <div class="div2 box" style=" display: flex; justify-content: left; ">
         <form>
+            <h3 class="h3Style">Search Coffee</h3>
+
             <label for="roast-selection" class="labels">Roast</label>
             <br>
             <select id="roast-selection" class="selectOptions">
-                <option>all</option>
-                <option>light</option>
-                <option>medium</option>
-                <option>dark</option>
+                <option>All</option>
+                <option>Light</option>
+                <option>Medium</option>
+                <option>Dark</option>
             </select>
             <br>
             <label for="coffee-filter" class="labels">Coffee Name</label>
@@ -42,14 +45,14 @@
             <label for="new-roast" class="labels">Roast Type</label>
             <br>
             <select id="new-roast" class="selectOptions">
-                <option>light</option>
-                <option>medium</option>
-                <option>dark</option>
+                <option>Light</option>
+                <option>Medium</option>
+                <option>Dark</option>
             </select>
             <br>
             <label for="new-name" class="labels">Coffee Name</label>
             <br>
-            <input type="text" id="new-name" class="searchBar" placeholder="Enter New Coffee Name...">
+            <input type="text" id="new-name" class="searchBar" placeholder="Enter Coffee Name...">
             <br>
             <button type="submit" id="submit" class="submit">Submit</button>
             <br>
