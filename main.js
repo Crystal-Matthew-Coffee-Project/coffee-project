@@ -34,6 +34,7 @@ function renderCoffees(coffees) {
 //===================================== DISPLAYS COFFEE LIST PER SELECTION ===========================================//
 
 function updateCoffees(e) {
+
     if (typeof e != "string") {//if coming in as an object(and NOT as a string), dont 'run' submit, just show results
         //above line not needed without the functionality of the submit button
         e.preventDefault(); // don't submit the form, we just want to update the data

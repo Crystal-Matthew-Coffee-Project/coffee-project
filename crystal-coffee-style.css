@@ -3,33 +3,53 @@
 body{
     background-image: url('caffeine-coffee-coffee-beans-roasted-585750.jpg');"
 }
-
-.parent {
-    display: grid;
-    height: 100vh;
-    width: 100fr;
-    padding-left: 12em;
-    padding-right: 12em;
-    grid-template-columns: 50% 50% ;
-    grid-template-rows: 30% 20% 30% ;
-    /*grid-template-columns: repeat(2, 1fr);*/
-    /*grid-template-rows: .10fr repeat(2, 1fr);*/
-    /*grid-column-gap: 5px;*/
-    /*grid-row-gap: 5px;*/
-    font-family: 'Arvo', serif;
+.name{
+    font-size: x-large;
+    font-weight:bold;
+    color: black;
+    text-shadow: 1px 1px 1px black;
+    margin: 5px;
+    line-height: 18px;
+    text-align: center;
 }
-/*This sets a border around the divs to show them.*/
-/*.box {*/
-/*    border: 1px solid black;*/
+.roast{
+    color: lightgrey;
+    font-size: medium;
+    text-shadow: 2px 2px 8px black;
+    margin: 5px;
+    line-height: 16px;
+}
+.roastAndNameDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;"
+}
+/*.parent {*/
+/*    display: grid;*/
+/*    height: 100vh;*/
+/*    width: 100fr;*/
+/*    padding-left: 12em;*/
+/*    padding-right: 12em;*/
+/*    grid-template-columns: 50% 50% ;*/
+/*    grid-template-rows: 30% 20% 30% ;*/
+/*    !*grid-template-columns: repeat(2, 1fr);*!*/
+/*    !*grid-template-rows: .10fr repeat(2, 1fr);*!*/
+/*    !*grid-column-gap: 5px;*!*/
+/*    !*grid-row-gap: 5px;*!*/
+/*    font-family: 'Arvo', serif;*/
 /*}*/
-.div1 {grid-area: 1 / 1 / 2 / 3;}
-.div2 { grid-area: 2 / 2 / 3 / 3;
-    text-align: center ;}
-.div3 { grid-area: 3 / 2 / 4 / 3;
-    text-align: center ;}
-.div4 {
-    grid-area: 2 / 1 / 4 / 2;
-}
+/*!*This sets a border around the divs to show them.*!*/
+/*!*.box {*!*/
+/*!*    border: 1px solid black;*!*/
+/*!*}*!*/
+/*.div1 {grid-area: 1 / 1 / 2 / 3;}*/
+/*.div2 { grid-area: 2 / 2 / 3 / 3;*/
+/*    text-align: center ;}*/
+/*.div3 { grid-area: 3 / 2 / 4 / 3;*/
+/*    text-align: center ;}*/
+/*.div4 {*/
+/*    grid-area: 2 / 1 / 4 / 2;*/
+/*}*/
 /*================================================= HEADERS ==========================================================*/
 .h1Style {
     display: flex;
@@ -370,7 +390,172 @@ body{
 }
 @media all and (max-width: 575px) {
     body {
-        background-color: #b4d455;
+        /*background-image: url('caffeine-coffee-coffee-beans-roasted-585750.jpg');*/
+        /*background-size: contain;*/
+        background-color: #42393C;
         background-image: none;
+        padding: 0;
+        margin: 0;
+    }
+    .selectOptions {
+        font-size: 1em;
+        width: 250px;
+        background-color:#FFF;
+        outline:none;
+        border:none;
+        box-shadow:none;
+        /*margin: 6px;*/
+    }
+    .iconImg {
+        margin-top: 10px;
+        width: 40px;
+        height:40px;
+        background: none;
+        position: absolute;
+        left: 100px;
+        top: 25px;
+        z-index: 2;
+    }
+    .coffee-header{
+        margin-top: 15px;
+        position: relative;
+        left:163px ;
+        width: 160px;
+        height: 100px;
+        z-index: 3;
+    }
+    .iconImg2 {
+        margin-top: 10px;
+        width: 40px;
+        height:40px;
+        background: none;
+        position: absolute;
+        right: 100px;
+        top: 25px;
+        /*margin: 0 auto;*/
+        z-index: 2;
+    }
+    .parent {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 20% 33% 33% 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        height: 100vh;
+        width: 100vw;
+        font-family: 'Arvo', serif;
+        color: #EADECF;
+        margin: 0;
+        padding: 0;
+    }
+
+    .div1 {
+        grid-area: 1 / 1 / 2 / 5;
+        background-color: #EADECF;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+
+    }
+    .div2 {
+        grid-area: 2 / 1 / 3 / 3;
+        background-color: #8A6E63;
+        /*padding-left: .8em*/
+    }
+    .div3 {
+        grid-area: 2 / 3 / 3 / 5;
+        background-color: #8A6E63;
+
+        /*padding-right: .8em*/
+    }
+    .div4 { grid-area: 3 / 2 / 5 / 4;
+            padding-top: .7em;
+    }
+
+    .h1Style {
+        display: flex;
+        justify-content: center;
+        font-family: 'Arvo', serif;
+        padding: 0;
+
+    }
+    .h3Style {
+        display: flex;
+        justify-content: center;
+        font-size: 1em;
+        padding: 0;
+        margin: .3em;
+
+    }
+    /*============================================ HR (LINE BREAK) =======================================================*/
+    .hrStyle {
+        opacity: 30%;
+        color: #EADECF;
+        z-index: 1;
+    }
+    /*========================================== DESCRIPTIVE LABEL OPTIONS ===============================================*/
+    .labels {
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 1em;
+        padding: 0;
+        margin: 0;
+
+    }
+    /*================================================= DROPDOWN LIST ====================================================*/
+    .selectOptions {
+        font-size: 1em;
+        width: 200px;
+        background-color:#FFF;
+        /*outline:none;*/
+        /*border:none;*/
+        padding: 0;
+        margin-left: 1em;
+    }
+    /*================================================= SEARCH BAR =======================================================*/
+    #coffee-filter {
+        width: 200px;
+        font-size: 1em;
+        border: none;
+        padding: 0;
+        margin-left: 1em;
+
+    }
+    #new-name {
+        width: 200px;
+        font-size: 1em;
+        border: none;
+        padding: 0;
+        margin-left: 1em;
+    }
+    /*/*This sets a border around the divs to show them.*/
+    /*.box {*/
+    /*    border: 1px solid black;*/
+    /*}*/
+    form {
+        margin: .3em;
+    }
+    .name{
+        font-size: 1em;
+        text-shadow: 1px 1px 1px black;
+        margin: .3em;
+        color: #EADECF;
+    }
+    .roast{
+        color: lightgrey;
+        font-size: medium;
+        text-shadow: 2px 2px 8px black;
+        padding: .3em;
+    }
+    .roastAndNameDiv {
+        display: flex;
+        justify-content: center;
     }
 }  ​
+/*@media all and (max-width:486px) {*/
+/*    body {*/
+/*        background-color: lightseagreen;*/
+/*        background-image: none;*/
+/*    }*/
+/*}*/
